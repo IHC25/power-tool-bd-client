@@ -1,0 +1,26 @@
+[
+  {
+    "name": "LAP AC/DC DIGITAL MULTIMETER 600V",
+    "img": "https://i.ibb.co/QkJQHXh/ae235-1.webp",
+    "description": "Tests AC/DC voltage, DC current and resistance. Features are CAT III 600V, 600V Voltage, 2MΩ Resistance, Standard, Data Hold Function, LCD Display, Pocket Size",
+    "minOrder": 3000,
+    "availableQuantity": 30000,
+    "price": "10"
+  },
+  {
+    "name": "RATCHET CRIMPING TOOL 7",
+    "img": "https://i.ibb.co/bz9hJSg/ae235-2.webp",
+    "description": "Suitable for 1 to 10mm². Features are Crimps 1-10mm² Electrical Wiring, Cold-Forged Carbon Steel Jaws, PVC Easy-Squeeze Handle",
+    "minOrder": 2000,
+    "availableQuantity": 20000,
+    "price": "12"
+  },
+  {
+    "name": "KEWTECH AC NON-CONTACT VOLTAGE TESTER WITH RED LED INDICATION 600V AC",
+    "img": "https://i.ibb.co/bJDq8sx/ae235.webp",
+    "description": "For non-contact detection of AC voltage. Specifically designed for UK voltage sensitivity. Features are CAT IV 600V, LED Indicator, Balanced Sensitivity, Robust Construction.",
+    "minOrder": 5000,
+    "availableQuantity": 50000,
+    "price": "20"
+  }
+]
