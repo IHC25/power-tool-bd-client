@@ -12,7 +12,7 @@ const BusinessSummary = () => {
           <div class="stat-title">
             Served Customer
             <img
-              className="mx-auto"
+              className="mx-auto py-4"
               src="https://img.icons8.com/ios-glyphs/90/000000/group.png"
               alt=""
             />
@@ -25,7 +25,7 @@ const BusinessSummary = () => {
           <div class="stat-title">
             Annual Revenue
             <img
-              className="mx-auto"
+              className="mx-auto py-4"
               src="https://img.icons8.com/ios/90/000000/sales-performance.png"
               alt=""
             />
@@ -38,7 +38,7 @@ const BusinessSummary = () => {
           <div class="stat-title">
             Tools
             <img
-              className="mx-auto"
+              className="mx-auto py-4"
               src="https://img.icons8.com/ios/90/000000/hammer-and-anvil.png"
               alt=""
             />
