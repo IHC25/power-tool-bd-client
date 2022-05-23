@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home/Home";
+import Reviews from "./Pages/Home/Reviews";
+import Tools from "./Pages/Home/Tools";
 import Footer from "./Pages/Shared/Footer";
 import Header from "./Pages/Shared/Header";
 
@@ -11,6 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/tools" element={<Tools></Tools>}></Route>
+        <Route path="/reviews" element={<Reviews></Reviews>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

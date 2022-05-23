@@ -5,10 +5,10 @@ const Header = () => {
   const menuItems = (
     <>
       <li>
-        <Link to="">Tools</Link>
+        <Link to="/tools">Tools</Link>
       </li>
       <li>
-        <Link to="">Reviews</Link>
+        <Link to="/reviews">Reviews</Link>
       </li>
       <li>
         <Link to="">Blogs</Link>
