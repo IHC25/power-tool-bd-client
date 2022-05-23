@@ -27,8 +27,8 @@ const Login = () => {
     );
   }
 
-  const onSubmit = (data) => {
-    signInWithEmailAndPassword(data.email, data.password);
+  const onSubmit = async (data) => {
+    await signInWithEmailAndPassword(data.email, data.password);
   };
   return (
     <div class="hero min-h-screen bg-base-200 mx-auto">
