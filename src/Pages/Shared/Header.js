@@ -2,6 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const menuItems = (
+    <>
+      <li>
+        <Link to="">Tools</Link>
+      </li>
+      <li>
+        <Link to="">Reviews</Link>
+      </li>
+      <li>
+        <Link to="">Blogs</Link>
+      </li>
+      <li>
+        <Link to="">About</Link>
+      </li>
+    </>
+  );
   return (
     <div class="navbar bg-neutral text-neutral-content">
       <div class="navbar-start">
@@ -26,12 +42,7 @@ const Header = () => {
             tabindex="0"
             class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
-              <Link to="">Item 1</Link>
-            </li>
-            <li>
-              <Link to="">Item 3</Link>
-            </li>
+            {menuItems}
           </ul>
         </div>
         <Link to="" class="btn btn-ghost normal-case text-xl">
@@ -39,19 +50,10 @@ const Header = () => {
         </Link>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal p-0">
-          <li>
-            <Link to="">Item 1</Link>
-          </li>
-          <li>
-            <Link to="">Item 3</Link>
-          </li>
-        </ul>
+        <ul class="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
-      <div class="navbar-end">
-        <Link to="" class="btn">
-          Login
-        </Link>
+      <div class="navbar-end px-4">
+        <Link to="">Login</Link>
       </div>
     </div>
   );
