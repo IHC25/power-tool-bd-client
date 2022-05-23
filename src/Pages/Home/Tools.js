@@ -9,7 +9,7 @@ const Tools = () => {
       .then((data) => setTools(data));
   }, []);
   return (
-    <div>
+    <div className="py-14">
       <h2 className="text-4xl font-bold text-neutral uppercase py-5">
         Our Tools
       </h2>

@@ -26,8 +26,8 @@ const Reviews = () => {
     },
   ];
   return (
-    <div>
-      <div>
+    <div className="py-14">
+      <div className="py-5">
         <h2 className="text-4xl text-neutral font-bold py-5 uppercase">
           Customer Reviews
         </h2>

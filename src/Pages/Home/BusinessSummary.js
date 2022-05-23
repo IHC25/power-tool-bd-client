@@ -2,12 +2,12 @@ import React from "react";
 
 const BusinessSummary = () => {
   return (
-    <div className="py-5 bg-white">
+    <div className="py-14 bg-white">
       <h2 className="text-5xl font-bold py-4 text-neutral">
         Most Trustworthy Manufacturer in Bangladesh
       </h2>
       <h3 className="text-3xl">Users Satisfaction is Our Top Priority</h3>
-      <div class="stats shadow">
+      <div class="stats shadow py-5">
         <div class="stat place-items-center">
           <div class="stat-title">
             Served Customer

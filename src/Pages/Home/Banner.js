@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import banner from "../../images/banner.webp";
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="hero min-h-screen w-full"
@@ -12,7 +14,14 @@ const Banner = () => {
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Power Tool BD</h1>
           <p className="mb-5">We Provide The Best Tools in Bangladesh.</p>
-          <button className="btn btn-ghost">Find Out More</button>
+          <button
+            onClick={() => {
+              navigate("/tools");
+            }}
+            className="btn btn-ghost"
+          >
+            Find Out More
+          </button>
         </div>
       </div>
     </div>
