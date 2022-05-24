@@ -12,6 +12,10 @@ import Footer from "./Pages/Shared/Footer";
 import Header from "./Pages/Shared/Header";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import MyOrder from "./Pages/Dashboard/MyOrder";
+import AddAReview from "./Pages/Dashboard/AddAReview";
+import MyProfile from "./Pages/Dashboard/MyProfile";
 
 function App() {
   return (
@@ -21,6 +25,18 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/tools" element={<Tools></Tools>}></Route>
+        <Route
+          path="/dashboard"
+          element={
+            <RequireAuth>
+              <Dashboard></Dashboard>
+            </RequireAuth>
+          }
+        >
+          <Route index element={<MyOrder></MyOrder>}></Route>
+          <Route path="add-review" element={<AddAReview></AddAReview>}></Route>
+          <Route path="my-profile" element={<MyProfile></MyProfile>}></Route>
+        </Route>
         <Route
           path="/tools/:toolId"
           element={

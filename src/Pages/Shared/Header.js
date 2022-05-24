@@ -8,6 +8,13 @@ const Header = () => {
   const [user] = useAuthState(auth);
   const menuItems = (
     <>
+      {user && (
+        <li>
+          <Link to="/dashboard" className="btn btn-ghost normal-case">
+            Dashboard
+          </Link>
+        </li>
+      )}
       <li>
         <Link to="/tools" className="btn btn-ghost normal-case">
           Tools
