@@ -2,7 +2,7 @@ import { signOut } from "firebase/auth";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
-import auth from "../../firebaseinit";
+import auth from "../../firebase.init";
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -68,14 +68,17 @@ const Header = () => {
         {!user ? (
           <Link to="/login">Login</Link>
         ) : (
-          <button
-            onClick={() => {
-              signOut(auth);
-            }}
-            className="btn btn-ghost normal-case"
-          >
-            Logout
-          </button>
+          <>
+            <Link to="">{user?.displayName}</Link>
+            <button
+              onClick={() => {
+                signOut(auth);
+              }}
+              className="btn btn-ghost normal-case"
+            >
+              Logout
+            </button>
+          </>
         )}
       </div>
     </div>

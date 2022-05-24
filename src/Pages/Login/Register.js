@@ -4,8 +4,8 @@ import {
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
-import auth from "../../firebaseinit";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
 import Loading from "../Shared/Loading";
 import SocialLogin from "./SocialLogin";
 
@@ -22,9 +22,16 @@ const Register = () => {
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
   let signInError;
+  const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
 
   if (loading || updating) {
     return <Loading></Loading>;
+  }
+
+  if (user) {
+    navigate(from);
   }
 
   if (error || updateError) {
@@ -130,11 +137,6 @@ const Register = () => {
                       {errors.password.message}
                     </span>
                   )}
-                </label>
-                <label class="label">
-                  <Link to="" class="label-text-alt link link-hover">
-                    Forgot password?
-                  </Link>
                 </label>
               </div>
               <div class="form-control mt-6">
