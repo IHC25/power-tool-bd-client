@@ -10,6 +10,8 @@ import RequireAuth from "./Pages/Login/RequireAuth";
 import Purchase from "./Pages/Purchase/Purchase";
 import Footer from "./Pages/Shared/Footer";
 import Header from "./Pages/Shared/Header";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
         <Route path="/register" element={<Register></Register>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

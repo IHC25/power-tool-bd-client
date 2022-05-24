@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 
 const OrderDetails = ({ tool }) => {
@@ -25,7 +26,33 @@ const OrderDetails = ({ tool }) => {
 
   const handlePlaceOrder = (e) => {
     e.preventDefault();
+    const userEmail = e.target.email.value;
+    const product = tool.name;
     const orderQuantity = e.target.quantity.value;
+    const address = e.target.address.value;
+    const phone = e.target.phone.value;
+    const order = {
+      email: userEmail,
+      product: product,
+      quantity: orderQuantity,
+      address: address,
+      phone: phone,
+    };
+    fetch("http://localhost:5000/order", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(order),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        toast.success("You have Successfully placed an Order");
+      })
+      .catch((error) => {
+        toast.error("Error Occurred!");
+        console.error("Error:", error);
+      });
   };
   return (
     <section className="py-14">
