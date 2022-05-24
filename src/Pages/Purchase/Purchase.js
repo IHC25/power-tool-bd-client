@@ -15,7 +15,7 @@ const Purchase = () => {
   return (
     <div>
       <ToolDetails tool={tool}></ToolDetails>
-      <OrderDetails></OrderDetails>
+      <OrderDetails tool={tool}></OrderDetails>
     </div>
   );
 };
