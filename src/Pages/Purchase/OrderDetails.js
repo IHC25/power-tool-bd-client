@@ -27,16 +27,20 @@ const OrderDetails = ({ tool }) => {
   const handlePlaceOrder = (e) => {
     e.preventDefault();
     const userEmail = e.target.email.value;
+    const userName = e.target.name.value;
     const product = tool.name;
+    const price = tool.price;
     const orderQuantity = e.target.quantity.value;
     const address = e.target.address.value;
     const phone = e.target.phone.value;
     const order = {
       email: userEmail,
+      name: userName,
       product: product,
       quantity: orderQuantity,
       address: address,
       phone: phone,
+      price: price,
     };
     fetch("http://localhost:5000/order", {
       method: "POST",
