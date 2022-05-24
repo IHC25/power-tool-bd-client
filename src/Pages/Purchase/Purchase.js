@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import OrderDetails from "./OrderDetails";
 import ToolDetails from "./ToolDetails";
 
 const Purchase = () => {
@@ -14,6 +15,7 @@ const Purchase = () => {
   return (
     <div>
       <ToolDetails tool={tool}></ToolDetails>
+      <OrderDetails></OrderDetails>
     </div>
   );
 };

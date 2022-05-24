@@ -4,6 +4,9 @@ const ToolDetails = ({ tool }) => {
   const { name, description, img, price, minOrder, availableQuantity } = tool;
   return (
     <section className="py-14">
+      <h2 className="text-4xl text-neutral font-bold uppercase">
+        Tool Details
+      </h2>
       <div class="card lg:card-side bg-base-100 shadow-xl mx-auto w-2/3">
         <figure>
           <img src={img} alt="Album" />
