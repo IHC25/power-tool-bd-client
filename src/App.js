@@ -21,6 +21,7 @@ import MakeAdmin from "./Pages/Dashboard/MakeAdmin";
 import AddProduct from "./Pages/Dashboard/AddProduct";
 import NotFound from "./Pages/Shared/NotFound";
 import Blogs from "./Pages/Home/Blogs";
+import MyPortfolio from "./Pages/Home/MyPortfolio";
 
 function App() {
   return (
@@ -58,6 +59,10 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route
+          path="/my-portfolio"
+          element={<MyPortfolio></MyPortfolio>}
+        ></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

@@ -26,6 +26,11 @@ const Header = () => {
         </Link>
       </li>
       <li>
+        <Link to="/my-portfolio" className="btn btn-ghost normal-case">
+          My Portfolio
+        </Link>
+      </li>
+      <li>
         <Link to="/blogs" className="btn btn-ghost normal-case">
           Blogs
         </Link>
