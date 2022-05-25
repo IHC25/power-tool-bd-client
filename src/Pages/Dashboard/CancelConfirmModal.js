@@ -5,9 +5,9 @@ const CancelConfirmModal = ({ cancelingOrder, setCancelingOrder }) => {
   const handleCancel = () => {
     fetch(`http://localhost:5000/order/${_id}`, {
       method: "DELETE",
-      // headers: {
-      //     authorization: `Bearer ${localStorage.getItem('accessToken')}`
-      // }
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+      },
     })
       .then((res) => res.json())
       .then((data) => {

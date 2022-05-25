@@ -15,7 +15,12 @@ const Payment = () => {
   const url = `http://localhost:5000/order/${id}`;
 
   const { data: order, isLoading } = useQuery(["order", id], () =>
-    fetch(url).then((res) => res.json())
+    fetch(url, {
+      method: "GET",
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+      },
+    }).then((res) => res.json())
   );
   if (isLoading) {
     return <Loading></Loading>;

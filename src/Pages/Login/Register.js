@@ -6,6 +6,7 @@ import {
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import useToken from "../../hooks/useToken";
 import Loading from "../Shared/Loading";
 import SocialLogin from "./SocialLogin";
 
@@ -24,14 +25,15 @@ const Register = () => {
   let signInError;
   const navigate = useNavigate();
   const location = useLocation();
+  const [token] = useToken(user);
   let from = location.state?.from?.pathname || "/";
 
   if (loading || updating) {
     return <Loading></Loading>;
   }
 
-  if (user) {
-    navigate(from);
+  if (token) {
+    navigate(from, { replace: true });
   }
 
   if (error || updateError) {
@@ -150,7 +152,7 @@ const Register = () => {
             <label class="label">
               <p className="text-left">Already Have An Account? </p>
               <Link to="/login" class="label-text-alt link link-hover">
-                Login
+                Register
               </Link>
             </label>
             {signInError}
