@@ -26,7 +26,7 @@ const Header = () => {
         </Link>
       </li>
       <li>
-        <Link to="" className="btn btn-ghost normal-case">
+        <Link to="/blogs" className="btn btn-ghost normal-case">
           Blogs
         </Link>
       </li>
