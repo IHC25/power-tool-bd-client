@@ -33,8 +33,8 @@ const MyOrder = () => {
   return (
     <div>
       <h2 className="text-2xl font-bold text-neutral py-4">My Order</h2>
-      <div class="overflow-x-auto">
-        <table class="table table-compact w-full">
+      <div className="overflow-x-auto">
+        <table className="table table-compact w-full">
           <thead>
             <tr>
               <th></th>

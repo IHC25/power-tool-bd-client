@@ -48,88 +48,88 @@ const MyProfile = () => {
       <h2 className="text-4xl py-4 text-neutral font-bold uppercase">
         My Profile
       </h2>
-      <div class="w-full bg-base-200">
-        <div class="mx-auto w-1/2 py-14">
-          <div class="card max-w-lg shadow-2xl bg-base-100">
-            <div class="card-body w-full">
+      <div className="w-full bg-base-200">
+        <div className="mx-auto w-1/2 py-14">
+          <div className="card max-w-lg shadow-2xl bg-base-100">
+            <div className="card-body w-full">
               <form onSubmit={handleUpdate} className="w-full" action="">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Name</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Name</span>
                   </label>
                   <input
                     type="text"
                     value={user.displayName}
                     disabled
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Email</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Email</span>
                   </label>
                   <input
                     type="email"
                     value={user.email}
                     disabled
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Education</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Education</span>
                   </label>
                   <input
                     type="text"
                     name="education"
                     defaultValue={updatedUser[0]?.education}
                     placeholder="Add your eduction"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">location</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">location</span>
                   </label>
                   <input
                     type="text"
                     name="location"
                     defaultValue={updatedUser[0]?.location}
                     placeholder="Add your location"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Phone Number</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Phone Number</span>
                   </label>
                   <input
                     type="number"
                     name="phone"
                     defaultValue={updatedUser[0]?.phone}
                     placeholder="Add your Phone Number"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">LinkedIn</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">LinkedIn</span>
                   </label>
                   <input
                     type="text"
                     name="linkedin"
                     defaultValue={updatedUser[0]?.linkedin}
                     placeholder="Add your LinkedIn Link"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control mt-6">
-                  <button class="btn btn-neutral">Update</button>
+                <div className="form-control mt-6">
+                  <button className="btn btn-neutral">Update</button>
                 </div>
               </form>
             </div>

@@ -12,7 +12,7 @@ const ProductRow = ({ index, product, setDeletingProduct }) => {
             setDeletingProduct(product);
           }}
           for="delete-confirm-modal"
-          class="btn btn-xs btn-error text-white"
+          className="btn btn-xs btn-error text-white"
         >
           DELETE
         </label>

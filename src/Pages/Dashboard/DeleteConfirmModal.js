@@ -19,17 +19,24 @@ const DeleteConfirmModal = ({ deletingProduct, setDeletingProduct }) => {
   };
   return (
     <div>
-      <input type="checkbox" id="delete-confirm-modal" class="modal-toggle" />
-      <div class="modal modal-bottom sm:modal-middle">
-        <div class="modal-box">
-          <h3 class="font-bold text-lg text-red-500">
+      <input
+        type="checkbox"
+        id="delete-confirm-modal"
+        className="modal-toggle"
+      />
+      <div className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg text-red-500">
             Are you sure you want to Delete this Product?
           </h3>
-          <div class="modal-action">
-            <button onClick={handleDeleteConfirm} class="btn btn-xs btn-error">
+          <div className="modal-action">
+            <button
+              onClick={handleDeleteConfirm}
+              className="btn btn-xs btn-error"
+            >
               Yes
             </button>
-            <label for="delete-confirm-modal" class="btn btn-xs">
+            <label for="delete-confirm-modal" className="btn btn-xs">
               No
             </label>
           </div>

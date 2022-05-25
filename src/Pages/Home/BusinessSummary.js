@@ -7,9 +7,9 @@ const BusinessSummary = () => {
         Most Trustworthy Manufacturer in Bangladesh
       </h2>
       <h3 className="text-3xl">Users Satisfaction is Our Top Priority</h3>
-      <div class="stats shadow py-5">
-        <div class="stat place-items-center">
-          <div class="stat-title">
+      <div className="stats shadow py-5">
+        <div className="stat place-items-center">
+          <div className="stat-title">
             Served Customer
             <img
               className="mx-auto py-4"
@@ -17,12 +17,12 @@ const BusinessSummary = () => {
               alt=""
             />
           </div>
-          <div class="stat-value">31K</div>
-          <div class="stat-desc">From January 2021 to June 2022</div>
+          <div className="stat-value">31K</div>
+          <div className="stat-desc">From January 2021 to June 2022</div>
         </div>
 
-        <div class="stat place-items-center">
-          <div class="stat-title">
+        <div className="stat place-items-center">
+          <div className="stat-title">
             Annual Revenue
             <img
               className="mx-auto py-4"
@@ -30,12 +30,12 @@ const BusinessSummary = () => {
               alt=""
             />
           </div>
-          <div class="stat-value text-primary">120M+</div>
-          <div class="stat-desc">20% increase</div>
+          <div className="stat-value text-primary">120M+</div>
+          <div className="stat-desc">20% increase</div>
         </div>
 
-        <div class="stat place-items-center">
-          <div class="stat-title">
+        <div className="stat place-items-center">
+          <div className="stat-title">
             Tools
             <img
               className="mx-auto py-4"
@@ -43,8 +43,8 @@ const BusinessSummary = () => {
               alt=""
             />
           </div>
-          <div class="stat-value">50+</div>
-          <div class="stat-desc">2% increase from 2021</div>
+          <div className="stat-value">50+</div>
+          <div className="stat-desc">2% increase from 2021</div>
         </div>
       </div>
     </div>

@@ -49,18 +49,18 @@ const Register = () => {
     await updateProfile({ displayName: data.name });
   };
   return (
-    <div class="hero min-h-screen bg-base-200 mx-auto">
-      <div class="hero-content flex-col lg:flex-row-reverse w-1/2">
-        <div class="text-center lg:text-left">
-          <h1 class="text-5xl font-bold">Register now!</h1>
-          <p class="py-6">
+    <div className="hero min-h-screen bg-base-200 mx-auto">
+      <div className="hero-content flex-col lg:flex-row-reverse w-1/2">
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl font-bold">Register now!</h1>
+          <p className="py-6">
             We are the best Electrical tools manufacturing company around the
             globe. We provide the best quality product. New users can get 25%
             discount in first order.
           </p>
         </div>
-        <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <div class="card-body">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card-body">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-control w-full max-w-xs">
                 <label className="label">
@@ -86,14 +86,14 @@ const Register = () => {
                 </label>
               </div>
 
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">Email</span>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
                 </label>
                 <input
                   type="email"
                   placeholder="email"
-                  class="input input-bordered"
+                  className="input input-bordered"
                   {...register("email", {
                     required: {
                       value: true,
@@ -118,14 +118,14 @@ const Register = () => {
                   )}
                 </label>
               </div>
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">Password</span>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Password</span>
                 </label>
                 <input
                   type="password"
                   placeholder="password"
-                  class="input input-bordered"
+                  className="input input-bordered"
                   {...register("password", {
                     required: {
                       value: true,
@@ -141,17 +141,17 @@ const Register = () => {
                   )}
                 </label>
               </div>
-              <div class="form-control mt-6">
+              <div className="form-control mt-6">
                 <input
                   type="submit"
                   value="Login"
-                  class="btn btn-neutral"
+                  className="btn btn-neutral"
                 ></input>
               </div>
             </form>
-            <label class="label">
+            <label className="label">
               <p className="text-left">Already Have An Account? </p>
-              <Link to="/login" class="label-text-alt link link-hover">
+              <Link to="/login" className="label-text-alt link link-hover">
                 Register
               </Link>
             </label>

@@ -2,13 +2,13 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div class="hero min-h-full bg-base-200">
-      <div class="hero-content text-center">
-        <div class="max-w-md">
-          <h1 class="text-3xl font-bold">
+    <div className="hero min-h-full bg-base-200">
+      <div className="hero-content text-center">
+        <div className="max-w-md">
+          <h1 className="text-3xl font-bold">
             How will you improve the performance of a React Application?
           </h1>
-          <p class="py-6 text-left">
+          <p className="py-6 text-left">
             We can improve the performance of a React Application by: <br />
             1. Maintaining component state local where it is important. <br />
             2. Using React components to prevent unnecessary re-renders. <br />
@@ -16,11 +16,11 @@ const Blogs = () => {
             4. Use Production Build. <br />
             5. Virtualize long lists
           </p>
-          <h1 class="text-3xl font-bold">
+          <h1 className="text-3xl font-bold">
             What are the different ways to manage a state in a React
             application?
           </h1>
-          <p class="py-6 text-left">
+          <p className="py-6 text-left">
             There are four main types of state you need to properly manage in
             your React apps: <br />
             1. Local State : Local state in React allows you to instantiate a
@@ -33,30 +33,30 @@ const Blogs = () => {
             4.URL State : Data that exists on our URLs, including the pathname
             and query parameters.
           </p>
-          <h1 class="text-3xl font-bold">
+          <h1 className="text-3xl font-bold">
             How does prototypical inheritance work?
           </h1>
-          <p class="py-6">
+          <p className="py-6">
             The Prototypal Inheritance is a component in javascript used to add
             techniques and properties in objects. It is a strategy by which an
             item can acquire the properties and techniques for another object.
             Sharing amid objects makes for easy inheritance of structure (data
             fields), behavior (functions / methods), and state (data values).
           </p>
-          <h1 class="text-3xl font-bold">
+          <h1 className="text-3xl font-bold">
             Why you do not set the state directly in React. For example, if you
             have const [products, setProducts] = useState([]). Why you do not
             set products = [...] instead, you use the setProducts?
           </h1>
-          <p class="py-6">
+          <p className="py-6">
             We cannot set the state directly in React. Because, if we set the
             state directly it will not re-render the component. So, we should
             use setState() instead.
           </p>
-          <h1 class="text-3xl font-bold">
+          <h1 className="text-3xl font-bold">
             What is a unit test? Why should write unit tests?
           </h1>
-          <p class="py-6">
+          <p className="py-6">
             Unit testing is a testing method that tests an individual software
             unit in isolation. In React, it means checking the components if it
             renders correctly for the specific props. We should write Unit

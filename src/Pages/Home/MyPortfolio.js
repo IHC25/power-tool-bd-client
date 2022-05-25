@@ -2,10 +2,10 @@ import React from "react";
 
 const MyPortfolio = () => {
   return (
-    <div class="hero min-h-screen bg-base-200">
-      <div class="hero-content text-center">
-        <div class="max-w-md">
-          <h1 class="text-5xl font-bold">
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content text-center">
+        <div className="max-w-md">
+          <h1 className="text-5xl font-bold">
             Hello there, I'm{" "}
             <span className="text-blue-400">Imran Hossain Chowdhury</span>
           </h1>

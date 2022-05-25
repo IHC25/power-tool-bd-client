@@ -30,15 +30,15 @@ const AddAReview = () => {
   return (
     <div>
       <h2 className="text-4xl py-5 text-neutral">Add A Review</h2>
-      <div class="card w-96  bg-base-100 shadow-xl mx-auto">
-        <div class="card-body">
+      <div className="card w-96  bg-base-100 shadow-xl mx-auto">
+        <div className="card-body">
           <form onSubmit={handleAddReview}>
             <p className="text-left pb-3">Rating</p>
             <input
               type="number"
               name="rating"
               placeholder="Add Rating"
-              class="input input-bordered input-sm w-full max-w-xs"
+              className="input input-bordered input-sm w-full max-w-xs"
               required
             />
             <p className="text-left pb-3">Review</p>
@@ -46,7 +46,7 @@ const AddAReview = () => {
               type="text"
               name="review"
               placeholder="Add Review"
-              class="input input-bordered input-lg w-full max-w-xs"
+              className="input input-bordered input-lg w-full max-w-xs"
               required
             />
 

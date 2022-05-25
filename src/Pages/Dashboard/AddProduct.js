@@ -31,84 +31,84 @@ const AddProduct = () => {
       <h2 className="text-4xl py-4 text-neutral font-bold uppercase">
         Add A Product
       </h2>
-      <div class="w-full bg-base-200">
-        <div class="mx-auto w-1/2 py-14">
-          <div class="card max-w-lg shadow-2xl bg-base-100">
-            <div class="card-body w-full">
+      <div className="w-full bg-base-200">
+        <div className="mx-auto w-1/2 py-14">
+          <div className="card max-w-lg shadow-2xl bg-base-100">
+            <div className="card-body w-full">
               <form onSubmit={handleAddProduct} className="w-full" action="">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Name</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Name</span>
                   </label>
                   <input
                     name="name"
                     type="text"
                     placeholder="Type Product Name"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Product Image</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Product Image</span>
                   </label>
                   <input
                     name="img"
                     type="text"
                     placeholder="Type Product Image URL"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Product Description</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Product Description</span>
                   </label>
                   <input
                     type="text"
                     name="description"
                     placeholder="Add Product Description"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Minimum Order Quantity</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Minimum Order Quantity</span>
                   </label>
                   <input
                     type="number"
                     name="minOrder"
                     placeholder="Add Minimum Order Quantity"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Available Quantity</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Available Quantity</span>
                   </label>
                   <input
                     type="number"
                     name="availableQuantity"
                     placeholder="Add Available Quantity"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Product Price</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Product Price</span>
                   </label>
                   <input
                     type="number"
                     name="price"
                     placeholder="Add Product Price"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </div>
 
-                <div class="form-control mt-6">
-                  <button type="submit" class="btn btn-neutral">
+                <div className="form-control mt-6">
+                  <button type="submit" className="btn btn-neutral">
                     Add Product
                   </button>
                 </div>

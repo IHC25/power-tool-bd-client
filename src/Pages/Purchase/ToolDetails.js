@@ -7,12 +7,12 @@ const ToolDetails = ({ tool }) => {
       <h2 className="text-4xl text-neutral font-bold uppercase">
         Tool Details
       </h2>
-      <div class="card lg:card-side bg-base-100 shadow-xl mx-auto w-2/3">
+      <div className="card lg:card-side bg-base-100 shadow-xl mx-auto w-2/3">
         <figure>
           <img src={img} alt="Album" />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">{name}</h2>
+        <div className="card-body">
+          <h2 className="card-title">{name}</h2>
           <p className="text-left">{description}</p>
           <h5 className="text-xl text-left font-bold">
             Minimum Order Quantity: {minOrder}

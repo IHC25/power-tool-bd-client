@@ -65,82 +65,82 @@ const OrderDetails = ({ tool }) => {
         Order Details
       </h2>
       <form onSubmit={handlePlaceOrder} className="mx-auto w-1/2">
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Customer Name</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Customer Name</span>
           </label>
-          <label class="input-group w-full">
+          <label className="input-group w-full">
             <span className="w-1/4">Name</span>
             <input
               name="name"
               type="text"
               value={user.displayName}
-              class="input input-bordered w-1/2"
+              className="input input-bordered w-1/2"
               disabled
             />
           </label>
         </div>
 
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Customer Email</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Customer Email</span>
           </label>
-          <label class="input-group w-full">
+          <label className="input-group w-full">
             <span className="w-1/4">Email</span>
             <input
               name="email"
               type="email"
               value={user.email}
-              class="input input-bordered w-1/2"
+              className="input input-bordered w-1/2"
               disabled
             />
           </label>
         </div>
 
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Customer Address</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Customer Address</span>
           </label>
-          <label class="input-group w-full">
+          <label className="input-group w-full">
             <span className="w-1/4">Address</span>
             <input
               name="address"
               type="text"
               placeholder="Enter Your Address"
-              class="input input-bordered w-1/2"
+              className="input input-bordered w-1/2"
               required
             />
           </label>
         </div>
 
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Customer Phone Number</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Customer Phone Number</span>
           </label>
-          <label class="input-group w-full">
+          <label className="input-group w-full">
             <span className="w-1/4">Phone</span>
             <input
               name="phone"
               type="number"
               placeholder="Enter Your Phone Number"
-              class="input input-bordered w-1/2"
+              className="input input-bordered w-1/2"
               required
             />
           </label>
         </div>
 
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Order Quantity</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Order Quantity</span>
           </label>
-          <label class="input-group w-full">
+          <label className="input-group w-full">
             <span className="w-1/4">Quantity</span>
             <input
               onBlur={handleMyQuantity}
               name="quantity"
               type="number"
               defaultValue={tool.minOrder}
-              class="input input-bordered w-1/2"
+              className="input input-bordered w-1/2"
               required
             />
           </label>
