@@ -80,6 +80,7 @@ const Header = () => {
             <button
               onClick={() => {
                 signOut(auth);
+                localStorage.removeItem("accessToken");
               }}
               className="btn btn-ghost normal-case"
             >
