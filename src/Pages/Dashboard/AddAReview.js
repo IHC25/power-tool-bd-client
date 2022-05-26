@@ -14,7 +14,7 @@ const AddAReview = () => {
       review: e.target.review.value,
     };
 
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://salty-eyrie-77802.herokuapp.com/reviews", {
       method: "POST",
       body: JSON.stringify(myReview),
       headers: {

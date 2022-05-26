@@ -8,7 +8,7 @@ const MyProfile = () => {
   const [updatedUser, setUpdatedUser] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/my-profile/${user.email}`, {
+    fetch(`https://salty-eyrie-77802.herokuapp.com/my-profile/${user.email}`, {
       headers: {
         "Content-Type": "application/json",
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -30,7 +30,7 @@ const MyProfile = () => {
       phone: e.target.phone.value,
       linkedin: e.target.linkedin.value,
     };
-    fetch(`http://localhost:5000/update-user/${user.email}`, {
+    fetch(`https://salty-eyrie-77802.herokuapp.com/update-user/${user.email}`, {
       method: "PATCH",
       body: JSON.stringify(updatedUser),
       headers: {

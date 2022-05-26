@@ -4,10 +4,10 @@ import Review from "./Review";
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
-    .then(res => res.json())
-    .then(data => setReviews(data))
-  },[])
+    fetch("https://salty-eyrie-77802.herokuapp.com/reviews")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
   return (
     <div className="py-14">
       <div className="py-5">

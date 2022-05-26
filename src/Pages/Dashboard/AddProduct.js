@@ -12,7 +12,7 @@ const AddProduct = () => {
       availableQuantity: e.target.availableQuantity.value,
       price: e.target.price.value,
     };
-    fetch("http://localhost:5000/tools", {
+    fetch("https://salty-eyrie-77802.herokuapp.com/tools", {
       method: "POST",
       body: JSON.stringify(newProduct),
       headers: {

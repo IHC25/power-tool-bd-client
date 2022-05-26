@@ -13,12 +13,15 @@ const MyOrder = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/my-order?user=${user.email}`, {
-        method: "GET",
-        headers: {
-          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-      })
+      fetch(
+        `https://salty-eyrie-77802.herokuapp.com/my-order?user=${user.email}`,
+        {
+          method: "GET",
+          headers: {
+            authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+          },
+        }
+      )
         .then((res) => {
           if (res.status === 401 || res.status === 403) {
             navigate("/");

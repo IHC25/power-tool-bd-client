@@ -4,7 +4,7 @@ import OrderRow from "./OrderRow";
 const ManageAllOrders = () => {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/order", {
+    fetch("https://salty-eyrie-77802.herokuapp.com/order", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

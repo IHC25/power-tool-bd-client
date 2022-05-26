@@ -5,7 +5,7 @@ const OrderRow = ({ order, index }) => {
   const { _id, name, email, product, paid, status } = order;
   useEffect(() => {}, [order]);
   const handleShipping = () => {
-    fetch(`http://localhost:5000/order/shipped/${_id}`, {
+    fetch(`https://salty-eyrie-77802.herokuapp.com/order/shipped/${_id}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -25,7 +25,7 @@ const OrderRow = ({ order, index }) => {
   };
   const handleOrderDelete = () => {
     if (window.confirm("Delete This Order?")) {
-      fetch(`http://localhost:5000/order/${_id}`, {
+      fetch(`https://salty-eyrie-77802.herokuapp.com/order/${_id}`, {
         method: "DELETE",
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,

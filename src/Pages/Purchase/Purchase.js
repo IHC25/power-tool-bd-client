@@ -7,7 +7,7 @@ const Purchase = () => {
   const { toolId } = useParams();
   const [tool, setTool] = useState([]);
   useEffect(() => {
-    const url = `http://localhost:5000/tools/${toolId}`;
+    const url = `https://salty-eyrie-77802.herokuapp.com/tools/${toolId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setTool(data));

@@ -8,7 +8,7 @@ const MakeAdmin = () => {
   const [users, setUsers] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
-    fetch("http://localhost:5000/user", {
+    fetch("https://salty-eyrie-77802.herokuapp.com/user", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

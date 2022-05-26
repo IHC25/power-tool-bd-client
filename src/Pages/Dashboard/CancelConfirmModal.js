@@ -3,7 +3,7 @@ import React from "react";
 const CancelConfirmModal = ({ cancelingOrder, setCancelingOrder }) => {
   const { _id } = cancelingOrder;
   const handleCancel = () => {
-    fetch(`http://localhost:5000/order/${_id}`, {
+    fetch(`https://salty-eyrie-77802.herokuapp.com/order/${_id}`, {
       method: "DELETE",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

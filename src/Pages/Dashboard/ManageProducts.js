@@ -6,7 +6,7 @@ const ManageProducts = () => {
   const [products, setProducts] = useState([]);
   const [deletingProduct, setDeletingProduct] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5000/tools", {
+    fetch("https://salty-eyrie-77802.herokuapp.com/tools", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

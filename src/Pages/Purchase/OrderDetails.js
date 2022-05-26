@@ -42,7 +42,7 @@ const OrderDetails = ({ tool }) => {
       phone: phone,
       price: price,
     };
-    fetch("http://localhost:5000/order", {
+    fetch("https://salty-eyrie-77802.herokuapp.com/order", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
